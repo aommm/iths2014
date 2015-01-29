@@ -20,6 +20,8 @@ namespace Autocomplete4._1._1.model
 
         public string ImagePath { get; set; }
 
+        public byte[] Image { get; set; }
+
         public override string ToString()
         {
             return FirstName + " " + LastName;

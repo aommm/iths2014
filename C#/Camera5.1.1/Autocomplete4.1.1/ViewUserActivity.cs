@@ -16,6 +16,7 @@ using AUri = Android.Net.Uri;
 using AEnvironment = Android.OS.Environment;
 using Autocomplete4._1._1.util;
 using Android.Graphics;
+using Java.Nio;
 
 namespace Autocomplete4._1._1
 {
@@ -70,9 +71,9 @@ namespace Autocomplete4._1._1
 
         private void LoadPhoto()
         {
-            if (user.ImagePath != null)
+            if (user.Image != null)
             {
-                Bitmap b = ImageUtils.LoadAndScaleBitmap(user.ImagePath, photo.Width, Resources.DisplayMetrics.HeightPixels);
+                Bitmap b = ImageUtils.LoadAndScaleBitmap(user.Image, photo.Width, Resources.DisplayMetrics.HeightPixels);
                 if (b != null)
                 {
                     photo.SetImageBitmap(b);
@@ -88,8 +89,19 @@ namespace Autocomplete4._1._1
                 Bitmap b = ImageUtils.LoadAndScaleBitmap(uri.Path, photo.Width, Resources.DisplayMetrics.HeightPixels);
                 photo.SetImageBitmap(b);
 
+                AFile hej = new AFile(uri.Path);
+
+                // Save to buffer
+                ByteBuffer buffer = ByteBuffer.Allocate(b.ByteCount);
+                b.CopyPixelsToBuffer(buffer);
+
+                // Buffer to byte array
+                byte[] img = new byte[b.ByteCount];
+                buffer.Get(img);
+                
                 // We have a direct reference to User instance, so it is updated in backend when we do this as well
-                user.ImagePath = uri.Path; 
+                // user.ImagePath = uri.Path;
+                user.Image = img;
             }
             else
             {

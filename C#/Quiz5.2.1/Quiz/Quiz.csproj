@@ -52,10 +52,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DetailedQuestionActivity.cs" />
+    <Compile Include="InfoActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="NewQuestionActivity.cs" />
     <Compile Include="Question.cs" />
     <Compile Include="QuestionActivity.cs" />
+    <Compile Include="QuestionAdapter.cs" />
     <Compile Include="QuestionManager.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,6 +70,12 @@
     <AndroidResource Include="Resources\layout\main_activity.axml" />
     <AndroidResource Include="Resources\layout\new_question_activity.axml" />
     <AndroidResource Include="Resources\layout\quest_activity.axml" />
+    <AndroidResource Include="Resources\layout\question_item.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\detailed_question_activity.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

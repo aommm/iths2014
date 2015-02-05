@@ -65,68 +65,74 @@ namespace Quiz
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060004
-			public const int ans1_edit = 2131099652;
-			
 			// aapt resource value: 0x7f060005
-			public const int ans2_edit = 2131099653;
+			public const int ans1_edit = 2131099653;
 			
 			// aapt resource value: 0x7f060006
-			public const int ans3_edit = 2131099654;
+			public const int ans2_edit = 2131099654;
 			
 			// aapt resource value: 0x7f060007
-			public const int ans4_edit = 2131099655;
-			
-			// aapt resource value: 0x7f06000f
-			public const int answer1 = 2131099663;
-			
-			// aapt resource value: 0x7f060010
-			public const int answer2 = 2131099664;
-			
-			// aapt resource value: 0x7f060011
-			public const int answer3 = 2131099665;
-			
-			// aapt resource value: 0x7f060012
-			public const int answer4 = 2131099666;
+			public const int ans3_edit = 2131099655;
 			
 			// aapt resource value: 0x7f060008
-			public const int b1 = 2131099656;
+			public const int ans4_edit = 2131099656;
 			
-			// aapt resource value: 0x7f060009
-			public const int b2 = 2131099657;
+			// aapt resource value: 0x7f060010
+			public const int answer1 = 2131099664;
 			
-			// aapt resource value: 0x7f06000a
-			public const int b3 = 2131099658;
+			// aapt resource value: 0x7f060011
+			public const int answer2 = 2131099665;
 			
-			// aapt resource value: 0x7f06000b
-			public const int b4 = 2131099659;
-			
-			// aapt resource value: 0x7f060014
-			public const int category_list = 2131099668;
-			
-			// aapt resource value: 0x7f06000c
-			public const int category_spinner = 2131099660;
-			
-			// aapt resource value: 0x7f06000d
-			public const int done = 2131099661;
-			
-			// aapt resource value: 0x7f060001
-			public const int info = 2131099649;
-			
-			// aapt resource value: 0x7f060002
-			public const int new_quest = 2131099650;
-			
-			// aapt resource value: 0x7f060000
-			public const int quest = 2131099648;
-			
-			// aapt resource value: 0x7f06000e
-			public const int quest_text = 2131099662;
+			// aapt resource value: 0x7f060012
+			public const int answer3 = 2131099666;
 			
 			// aapt resource value: 0x7f060013
-			public const int question_count_text = 2131099667;
+			public const int answer4 = 2131099667;
+			
+			// aapt resource value: 0x7f060009
+			public const int b1 = 2131099657;
+			
+			// aapt resource value: 0x7f06000a
+			public const int b2 = 2131099658;
+			
+			// aapt resource value: 0x7f06000b
+			public const int b3 = 2131099659;
+			
+			// aapt resource value: 0x7f06000c
+			public const int b4 = 2131099660;
+			
+			// aapt resource value: 0x7f06000d
+			public const int category_spinner = 2131099661;
+			
+			// aapt resource value: 0x7f060000
+			public const int detailed_text = 2131099648;
+			
+			// aapt resource value: 0x7f06000e
+			public const int done = 2131099662;
+			
+			// aapt resource value: 0x7f060002
+			public const int info = 2131099650;
 			
 			// aapt resource value: 0x7f060003
-			public const int question_edit = 2131099651;
+			public const int new_quest = 2131099651;
+			
+			// aapt resource value: 0x7f060001
+			public const int quest = 2131099649;
+			
+			// aapt resource value: 0x7f06000f
+			public const int quest_text = 2131099663;
+			
+			// aapt resource value: 0x7f060015
+			public const int question_count_text = 2131099669;
+			
+			// aapt resource value: 0x7f060004
+			public const int question_edit = 2131099652;
+			
+			// aapt resource value: 0x7f060016
+			public const int question_list = 2131099670;
+			
+			// aapt resource value: 0x7f060014
+			public const int question_text = 2131099668;
 			
 			static Id()
 			{
@@ -142,16 +148,22 @@ namespace Quiz
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int main_activity = 2130903040;
+			public const int detailed_question_activity = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int new_question_activity = 2130903041;
+			public const int main_activity = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int quest_activity = 2130903042;
+			public const int new_question_activity = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int stats_activity = 2130903043;
+			public const int quest_activity = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int question_item = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int stats_activity = 2130903045;
 			
 			static Layout()
 			{

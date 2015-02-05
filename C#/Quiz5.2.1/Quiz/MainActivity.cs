@@ -23,6 +23,12 @@ namespace Quiz
             infoButton = FindViewById<Button>(Resource.Id.info);
             newQuestionButton = FindViewById<Button>(Resource.Id.new_quest);
 
+            infoButton.Click += delegate
+            {
+                Intent i = new Intent(this, typeof(InfoActivity));
+                StartActivity(i);
+            };
+
             questionButton.Click += delegate
             {
                 Intent i = new Intent(this, typeof(QuestionActivity));

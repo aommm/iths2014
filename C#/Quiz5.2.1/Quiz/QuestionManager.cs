@@ -39,6 +39,32 @@ namespace Quiz
             }
         }
 
+        public List<Question> Questions
+        {
+            get
+            {
+                SQLiteConnection db = new SQLiteConnection(dbPath);
+                return db.Table<Question>().ToList();
+            }
+        }
+
+        public int Count
+        {
+            get
+            {
+                SQLiteConnection db = new SQLiteConnection(dbPath);
+                int count = db.Table<Question>().Count();
+                db.Close();
+                return count;
+            }
+        }
+
+        public Question GetQuestion(int id)
+        {
+            SQLiteConnection db = new SQLiteConnection(dbPath);
+            return db.Get<Question>(id);
+        }
+
         public void AddQuestion(Question q)
         {
             SQLiteConnection db = new SQLiteConnection(dbPath);
@@ -52,8 +78,6 @@ namespace Quiz
             db.CreateTable<Question>();
 
             r = new Random();
-
-            db.DeleteAll<Question>();
 
             if (db.Table<Question>().Count() == 0)
             {

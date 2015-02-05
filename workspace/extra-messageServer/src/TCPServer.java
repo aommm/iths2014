@@ -13,16 +13,6 @@ public class TCPServer extends Thread {
     private PrintWriter mOut;
     private OnMessageReceived messageListener;
 
-    public static void main(String[] args) {
-
-        //opens the window where the messages will be received and sent
-        ServerBoard frame = new ServerBoard();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
-        frame.setVisible(true);
-
-    }
-
     /**
      * Constructor of the class
      * @param messageListener listens for the messages

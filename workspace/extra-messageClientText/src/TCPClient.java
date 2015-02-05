@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
 
-public class TCPClient {
+public class TCPClient extends Thread {
 
     private String serverMessage;
     public static final String SERVERIP = "127.0.0.1"; // host machine's IP address

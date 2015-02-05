@@ -6,7 +6,6 @@ import java.net.Socket;
 
 public class TCPClient {
 
-    private String serverMessage;
     public static final String SERVERIP = "10.0.2.2"; // host machine's IP address
     public static final int SERVERPORT = 4444;
     private OnMessageReceived mMessageListener = null;
@@ -49,12 +48,12 @@ public class TCPClient {
 
             //create a socket to make the connection with the server
             Socket socket = new Socket(serverAddr, SERVERPORT);
-
+            
             try {
 
                 //send the message to the server
                 out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true);
-
+                
                 Log.e("TCP Client", "C: Sent.");
 
                 Log.e("TCP Client", "C: Done.");
@@ -63,7 +62,9 @@ public class TCPClient {
                 in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
                 //in this while the client listens for the messages sent by the server
+                String serverMessage = null;
                 while (mRun) {
+                	Thread.sleep(100);
                     serverMessage = in.readLine();
 
                     if (serverMessage != null && mMessageListener != null) {

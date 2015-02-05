@@ -6,6 +6,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -13,7 +14,7 @@ import android.widget.ListView;
 public class MainActivity extends ActionBarActivity	{
 	    private ListView mList;
 	    private ArrayList<String> arrayList;
-	    private MyCustomAdapter mAdapter;
+	    private ArrayAdapter<String> mAdapter;
 	    private TCPClient mTcpClient;
 
 	    @Override
@@ -29,7 +30,7 @@ public class MainActivity extends ActionBarActivity	{
 
 	        //relate the listView from java to the one created in xml
 	        mList = (ListView)findViewById(R.id.list);
-	        mAdapter = new MyCustomAdapter(this, arrayList);
+	        mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
 	        mList.setAdapter(mAdapter);
 
 	        // connect to the server

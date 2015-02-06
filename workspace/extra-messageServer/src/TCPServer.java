@@ -60,7 +60,7 @@ public class TCPServer extends Thread {
                 //this while it's like a listener for messages
                 while (running) {
                     String message = in.readLine();
-
+                    System.out.println("hej!");
                     if (message != null && messageListener != null) {
                         //call the method messageReceived from ServerBoard class
                         messageListener.messageReceived(message);

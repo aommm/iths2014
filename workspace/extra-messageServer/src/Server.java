@@ -17,7 +17,7 @@ public class Server {
 			}
 		};
 		
-		TCPServer server = new TCPServer(listener);
+		server = new TCPServer(listener);
 		runTextual();
 		// Could also create ServerBoard, if we want to bother with Swing
     }

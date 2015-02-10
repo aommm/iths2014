@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ämne"
+        android:id="@+id/subject_edit" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="Text"
+        android:id="@+id/text_edit" />
+    <CheckBox
+        android:text="Maila i CAPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/caps_check" />
+    <CheckBox
+        android:text="Maila i 1337"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leet_check" />
+    <CheckBox
+        android:text="Upprepa meddelandet 5 gånger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repeat_check" />
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skicka" />
+</LinearLayout>

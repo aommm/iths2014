@@ -26,7 +26,7 @@ public class Main {
 			if (input.equals("exit")) {
 				running = false;
 			} else {
-				server.sendMessage(input);
+				server.sendMessageToClients(input);
 			}
 		}
 		

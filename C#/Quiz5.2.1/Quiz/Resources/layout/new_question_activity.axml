@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="@string/new_question" />
+    <EditText
+        android:id="@+id/question_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="4" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="@string/ans1" />
+    <EditText
+        android:id="@+id/ans1_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="@string/ans2" />
+    <EditText
+        android:id="@+id/ans2_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="@string/ans3" />
+    <EditText
+        android:id="@+id/ans3_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="@string/ans4" />
+    <EditText
+        android:id="@+id/ans4_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:text="@string/rightans" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2">
+        <RadioButton
+            android:id="@+id/b1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <RadioButton
+            android:id="@+id/b2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <RadioButton
+            android:id="@+id/b3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <RadioButton
+            android:id="@+id/b4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+    </RadioGroup>
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2" />
+    <Button
+        android:id="@+id/done"
+        android:layout_height="0px"
+        android:layout_width="wrap_content"
+        android:layout_weight="2"
+        android:text="Done" />
+</LinearLayout>

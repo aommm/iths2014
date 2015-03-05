@@ -56,3 +56,11 @@ function sort(name) {
 renderPage();
 
 });
+
+// TODO:
+// Add fold which sums all ages
+// Generate a list of all interests
+// Add searching
+// ...
+
+

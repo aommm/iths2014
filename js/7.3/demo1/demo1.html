@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.js"></script>
+		<script src="source1.js"></script>
+	</head>
+	<body ng-app="TestApp" ng-controller="MenuCtrl">
+		<div ng-include="'menu.html'"></div>
+		<div ng-switch="content">
+			<div ng-switch-when="s">
+				<div ng-include="'space.html'"></div>
+			</div>
+			<div ng-switch-when="e">
+				<div ng-include="'eat.html'"></div>
+			</div>
+			<div ng-switch-default>
+				<div ng-include="'recipes.html'"></div>
+			</div>
+		</div>
+	</body>
+</html>

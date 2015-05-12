@@ -17,12 +17,7 @@ app.controller('MyCtrl', ['$scope', 'client', function($scope, client) {
 	$scope.client = client;
 }]);
 
-app.controller('MyCtrl2', ['$scope','clientId', 'client', function($scope, clientId, client) {
-	console.log(clientId);
+app.controller('MyCtrl2', ['$scope', 'client', function($scope, client) {
 	console.log(client);
 	$scope.client = client;
-	$scope.clientId = clientId;
 }]);
-
-
-

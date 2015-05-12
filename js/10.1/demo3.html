@@ -18,12 +18,13 @@
 <body ng-app="myModule" ng-controller="MyCtrl">
 
 	<div ng-controller="MyCtrl">
-		<input type="text" ng-model="client.name" />
+		<input type="text" ng-model="client.name" /><br>
+		The secret id is {{client.id}}
 	</div>
 
 	<div ng-controller="MyCtrl2">
 		<input type="text" ng-model="client.name" /><br>
-		The secret id is {{clientId}}
+		The secret id is {{client.id}}
 	</div>
 
 

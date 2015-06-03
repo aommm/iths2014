@@ -2,9 +2,6 @@ var app = angular.module('myApp', []);
 
 app.controller('MainCtrl', ['$scope', function ($scope) {
 
-	$scope.x = "kk";
-	$scope.photoSrc = "";
-
 	$scope.takePhoto = function () {
 		console.log("taking a photo!");
 
@@ -17,8 +14,6 @@ app.controller('MainCtrl', ['$scope', function ($scope) {
 			$scope.$apply(function () {
 				console.log("Img taken! path:",imgPath);
 				$scope.photoSrc = imgPath;
-				$scope.x = "TAKEN 2"+imgPath;
-				// document.getElementById('blubb').src = imgPath;				
 			});
 		}
 		function cameraError(msg) {

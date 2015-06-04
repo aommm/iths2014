@@ -1,0 +1,26 @@
+<html >
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta http-equiv="Content-Security-Policy">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <title>Hello World</title>
+    </head>
+    <body >
+        <h>DATABASE</h><br>
+    	Id:<input type="number" id="id"/><br> 
+        Name: <input type="text" id="name"/> <br>
+        Age: <input type="number" id="age"/><br>
+    	<button id="write">Write</button><button id="update">Update</button><button id="delete">Delete</button><br>
+        <br><span id="result"></span>
+        <h>LOCAL STORAGE</h><br>
+        Key: <input type="text" id="key"/><br>
+        Value: <input type="text" id="val"/>
+        <button id="lsread">Read</button><button id="lswrite">Write</button>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="source.js"></script>
+    </body>
+</html>
